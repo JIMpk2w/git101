@@ -35,7 +35,7 @@ void readBook(Book* book, int page){
 
 void findTopPage(Book books[], int size, Book** topPage){
     *topPage = &books[0];
-    for(int i = 1; i < 3; ++i){
+    for(int i = 1; i < size; ++i){
         if(books[i].page > (*topPage)->page){
             *topPage = &books[i];
         }
